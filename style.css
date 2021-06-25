@@ -66,13 +66,10 @@ main{
   /* justify-content:flex-end; */
 }
 
-
-
 .trybewarts-login input:focus::placeholder{
   transition: 1s;
   transform: translateX(200%);
 }
-
 
 .button {
   background-color: white;
@@ -92,6 +89,12 @@ main{
   display: flex;  
   /* flex-wrap: wrap; */
   /* border: 1px solid red; */
+}
+
+.select-wrapper{
+  display: flex;
+  /* border: 1px solid red; */
+  width: 50%;
 }
 
 #evaluation-form {
@@ -181,11 +184,6 @@ main{
   margin: 0 9px;
 }
 
-.checkboxes {
-  /* border: 1px solid red; */
-  /* width: 300px; */
-}
-
 .counter-align {
   display: flex;
   justify-content: space-between;
@@ -224,7 +222,7 @@ hr{
   align-items: center;
 }
 
-footer{
+footer {
   /* border: 1px solid red; */
   width:80%;
   display: flex;
@@ -233,10 +231,14 @@ footer{
   align-items: center;
 }
 
-.creditos{
+.creditos {
   font-size: 12px;
   margin: 10px 0;
   width: 70%;
+}
+
+#house {
+  width: 100%;
 }
 
 @media screen and (max-width:1300px) {
@@ -293,6 +295,55 @@ footer{
     .imagem-main, #trybewarts-forms-logo{
       width:100%;
     }
+
+    #house {
+      width: 100%;
+    }
+
+    .select-wrapper{
+      display: flex;
+      /* border: 1px solid red; */
+      width: 100%;
+    }
+
+    select, option {
+      -webkit-appearance: none;
+      font-family: Arial, ArialHebrew, sans-serif;
+      /* font-size: x-large; */
+      text-align: center;
+      color: #FFF;
+      margin: 1vh;
+      padding: 1vh;
+    }
+
+    select {
+      padding-right: 24px;
+    }
+
+    select, option, button {
+    background-color: #333;
+    border-radius: 1vh;
+    border-color: transparent;
+}
+    
+    .select-wrapper {
+      position: relative;
+      display: flex;
+      width: 50%;
+    }
+    
+    .select-wrapper:after {
+        content: '\0025BC';
+        font: normal normal normal 12px/1 FontAwesome;
+        color: white;
+        right: 14px;
+        top: 4px;
+        height: 26px;
+        padding: 15px 0px 0px 8px;
+        position: absolute;
+        pointer-events: none;
+    }
   }
+
 
 }
