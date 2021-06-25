@@ -125,8 +125,8 @@ main{
   outline:none;
   height: 35px;
   border-radius: 5px 5px 0 0;
-  background-color: #3c0f0a;
-  color: white;
+  /* background-color: #3c0f0a; */
+  color: black;
 }
 
 .imagem-main {
